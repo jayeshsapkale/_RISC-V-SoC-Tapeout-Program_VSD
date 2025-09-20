@@ -24,7 +24,7 @@ This repository documents all tasks, scripts, and snapshots created during the p
 ---
 
 ## Table of Contents
-1. [Week 0: Setup and Tools](WEEK0-README.md)  
+1. [Week 0: Setup and Tools](WEEK0/TASK0.md)  
   
 
 
