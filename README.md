@@ -1,8 +1,7 @@
 # _RISC-V-SoC-Tapeout-Program_VSD
 This repository documents my week-by-week progress with tasks inside each week for_RISC-V-SoC-Tapeout-Program_VSD
-# _RISC-V-SoC-Tapeout-Program_VSD
+
 WEEK0: SETUP AND TOOLS
-# _RISC-V-SoC-Tapeout-Program_VSD
 
 ## Overview
 This repository documents the RISC-V SoC Tapeout Program (VSD) from **RTL to GDSII** using open-source tools. It includes installation scripts, snapshots, and notes for all steps.
