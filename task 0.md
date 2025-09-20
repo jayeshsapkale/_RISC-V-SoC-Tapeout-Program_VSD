@@ -1,36 +1,33 @@
 WEEK0: SETUP AND TOOLS
-Overview:
+Overview
+
 This repository provides a step-by-step guide for setting up the environment, installing necessary tools, and verifying installations for the RISC-V SoC Tapeout Program. It uses open-source tools and includes scripts, snapshots, and notes for each step.
+## Table of Contents
+1. [System Requirements](#system-requirements)  
+2. [Installed Tools](#installed-tools)  
+3. [Installation Scripts](#installation-scripts)  
+4. [Snapshots](#snapshots)  
 
-Table of Contents
+---
 
-System Requirements
+## System Requirements
+- **OS:** Ubuntu 20.04+ (VM or native)  
+- **RAM:** 6GB  
+- **CPU:** 4 vCPU  
+- **HDD:** 50GB  
+- **Windows Users:** Use Ubuntu VM or WSL  
 
-Installed Tools
-
-Installation Scripts
-
-Snapshots
-
-System Requirements
-
-OS: Ubuntu 20.04+ (on VirtualBox or native VM)
-
-RAM: 6GB
-
-CPU: 4 vCPU
-
-HDD: 50GB
-
-Windows Users: Use Ubuntu VM or WSL
-
-Installed Tools
-1. Yosys – RTL Synthesis Tool
+## Installed Tools
+1 [Yosys](#Yosys – RTL Synthesis Tool)  
+2. [Installed Tools](#installed-tools)  
+3. [Installation Scripts](#installation-scripts)  
+4. [Snapshots](#snapshots) 
+## Yosys – RTL Synthesis Tool
 
 Purpose: Converts RTL code into gate-level representations.
 
 Installation:
-
+```
 sudo apt-get update
 git clone https://github.com/YosysHQ/yosys.git
 cd yosys
@@ -42,23 +39,25 @@ make config-gcc
 make
 sudo make install
 
-
+```
 Verification:
+<img width="940" height="711" alt="image" src="https://github.com/user-attachments/assets/f9b75781-c3d4-4ed2-9d02-10b5dc1bc047" />
 
 
 ✅ Yosys successfully installed
 
-2. Icarus Verilog (Iverilog) – Verilog Simulator
+2. IVerilog  – Verilog Simulator
 
 Purpose: Compiles and simulates Verilog designs for functional verification.
 
 Installation:
-
+```
 sudo apt-get update
 sudo apt-get install iverilog
-
+```
 
 Verification:
+<img width="940" height="703" alt="image" src="https://github.com/user-attachments/assets/1c4f3375-43d3-4009-92b1-022a10e2bdd0" />
 
 
 ✅ Iverilog successfully installed
