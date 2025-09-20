@@ -34,7 +34,7 @@ Purpose: Converts RTL code into gate-level representations.
 \
 ## Yosys
 
-Yosys
+```Yosys
 $ sudo apt-get update
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys
@@ -45,7 +45,8 @@ $ sudo apt-get install build-essential clang bison flex \
  libboost-python-dev libboost-filesystem-dev zlib1g-dev
 $ make config-gcc
 $ make
-$ sudo make install 
+$ sudo make install
+ ```
 📷 Installation Verification
 <img width="940" height="711" alt="image" src="https://github.com/user-attachments/assets/5ce0f9ee-4d4a-4e2c-80a1-833026bd2ff6" />
                           ✅ Yosys Successfully Installed
