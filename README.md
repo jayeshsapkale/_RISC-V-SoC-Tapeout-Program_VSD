@@ -1,9 +1,13 @@
 # _RISC-V-SoC-Tapeout-Program_VSD
 This repository documents my week-by-week progress with tasks inside each week for_RISC-V-SoC-Tapeout-Program_VSD
 # _RISC-V-SoC-Tapeout-Program_VSD
+WEEK0: SETUP AND TOOLS
+# _RISC-V-SoC-Tapeout-Program_VSD
 
 ## Overview
-Documenting the full RISC-V SoC tapeout program: tool setup, RTL-to-GDS flow, and snapshots.
+This repository documents the RISC-V SoC Tapeout Program (VSD) from **RTL to GDSII** using open-source tools. It includes installation scripts, snapshots, and notes for all steps.
+
+---
 
 ## Table of Contents
 1. [System Requirements](#system-requirements)
@@ -13,18 +17,35 @@ Documenting the full RISC-V SoC tapeout program: tool setup, RTL-to-GDS flow, an
 5. [OpenLane Setup](#openlane-setup)
 6. [References](#references)
 
+---
+
 ## System Requirements
-- Ubuntu 20.04+
-- 6GB RAM, 4 vCPU, 50GB HDD
-- VirtualBox or native VM
+- Ubuntu 20.04+ (on VirtualBox or native VM)
+- RAM: 6GB, CPU: 4vCPU, HDD: 50GB
+- Windows users can use Ubuntu VM or WSL
+
+---
 
 ## Installed Tools
-- Yosys, Iverilog, GTKWave, ngspice, Magic, OpenLane, Docker
+- **Yosys** (RTL Synthesis)  
+- **Iverilog** (Simulation)  
+- **GTKWAVE** (Waveform Viewer)  
+- **ngspice** (SPICE Simulation)  
+- **Magic** (VLSI Layout)  
+- **OpenLane** (ASIC Flow)  
+- **Docker**  
+
+---
 
 ## Installation Scripts
-Scripts are in the `commands/` folder. Run them sequentially:
+Scripts are in the `commands/` folder. Run sequentially:
 
 ```bash
 cd commands
 chmod +x *.sh
 ./00_yosys.sh
+./01_iverilog.sh
+./02_gtkwave.sh
+./03_ngspice.sh
+./04_magic.sh
+./05_openlane.sh
